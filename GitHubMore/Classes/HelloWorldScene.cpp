@@ -9,6 +9,8 @@ CCScene* HelloWorld::scene()
 	// 'scene' is an autorelease object
 	CCScene *scene = CCScene::node();
 	
+    //new file;
+    
 	// 'layer' is an autorelease object
 	HelloWorld *layer = HelloWorld::node();
 

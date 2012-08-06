@@ -477,10 +477,10 @@
 		5065C43115CFEF9F002643A6 /* GitHubMore */ = {
 			isa = PBXGroup;
 			children = (
+				5065C5D715CFEFA2002643A6 /* Classes */,
 				5065C43215CFEF9F002643A6 /* Resources */,
 				5065C44A15CFEFA0002643A6 /* libs */,
 				5065C5CE15CFEFA2002643A6 /* ios */,
-				5065C5D715CFEFA2002643A6 /* Classes */,
 				5065C5CC15CFEFA2002643A6 /* Supporting Files */,
 			);
 			path = GitHubMore;
@@ -1321,6 +1321,7 @@
 				5065C5E215CFEFA2002643A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
