@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1804F20215D0B82E00A68891 /* GameMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1804F20015D0B82E00A68891 /* GameMain.cpp */; };
+		1804F20815D0F41600A68891 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1804F20715D0F41600A68891 /* test.txt */; };
 		5065C42215CFEF9F002643A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5065C42115CFEF9F002643A6 /* QuartzCore.framework */; };
 		5065C42415CFEF9F002643A6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5065C42315CFEF9F002643A6 /* OpenGLES.framework */; };
 		5065C42615CFEF9F002643A6 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5065C42515CFEF9F002643A6 /* OpenAL.framework */; };
@@ -143,6 +145,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1804F20015D0B82E00A68891 /* GameMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameMain.cpp; path = Classes/GameMain.cpp; sourceTree = "<group>"; };
+		1804F20115D0B82E00A68891 /* GameMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameMain.h; path = Classes/GameMain.h; sourceTree = "<group>"; };
+		1804F20715D0F41600A68891 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		5065C41D15CFEF9F002643A6 /* GitHubMore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubMore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5065C42115CFEF9F002643A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5065C42315CFEF9F002643A6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -500,6 +505,7 @@
 				5065C44315CFEF9F002643A6 /* Icon.png */,
 				5065C44515CFEF9F002643A6 /* Icon@2x.png */,
 				5065C44715CFEF9F002643A6 /* Info.plist */,
+				1804F20715D0F41600A68891 /* test.txt */,
 				5065C44815CFEF9F002643A6 /* iTunesArtwork */,
 			);
 			name = Resources;
@@ -1016,6 +1022,8 @@
 			children = (
 				5065C5D815CFEFA2002643A6 /* AppDelegate.h */,
 				5065C5D915CFEFA2002643A6 /* AppDelegate.cpp */,
+				1804F20115D0B82E00A68891 /* GameMain.h */,
+				1804F20015D0B82E00A68891 /* GameMain.cpp */,
 				5065C5DB15CFEFA2002643A6 /* HelloWorldScene.h */,
 				5065C5DC15CFEFA2002643A6 /* HelloWorldScene.cpp */,
 			);
@@ -1084,6 +1092,7 @@
 				5065C44415CFEF9F002643A6 /* Icon.png in Resources */,
 				5065C44615CFEF9F002643A6 /* Icon@2x.png in Resources */,
 				5065C44915CFEF9F002643A6 /* iTunesArtwork in Resources */,
+				1804F20815D0F41600A68891 /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1208,6 +1217,7 @@
 				5065C5D615CFEFA2002643A6 /* RootViewController.mm in Sources */,
 				5065C5DA15CFEFA2002643A6 /* AppDelegate.cpp in Sources */,
 				5065C5DD15CFEFA2002643A6 /* HelloWorldScene.cpp in Sources */,
+				1804F20215D0B82E00A68891 /* GameMain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1274,11 +1284,13 @@
 				GCC_PREFIX_HEADER = GitHubMore/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = GitHubMore/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1292,11 +1304,13 @@
 				GCC_PREFIX_HEADER = GitHubMore/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = GitHubMore/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
